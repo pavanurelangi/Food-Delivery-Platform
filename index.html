@@ -1,36 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Login/Signup Form</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <div class="form-box">
-            <header>
-                <h1 id="title">Registration Form</h1>
-            </header>
-            <form action="">
-                <input type="text" placeholder="Name" id="nameField">
-                <input type="email" placeholder="Username or Email address">
+<!DOCTYPE html> 
+<html> 
 
-                <input type="password" placeholder="Password">
-                <a href="">Forgot Password?</a>
-                <input type="button" value="Register" id="signinBtn">
+<head> 
+    <title>Registration Form</title> 
+    <link rel="stylesheet" href="styles.css"> 
+</head> 
 
-                <div class="links">
-                    <a href="#"><img src="fb.jpg" alt="FaceBook"></a>
-                    <a href="#"><img src="twitter.jpg" alt="Twitter"></a>
-                    <a href="#"><img src="google.jpg" alt="Google"></a>
-                </div>
-                <p class="signup">Not a member?<a href="#" id="signupBtn">Sign Up</a></p>
-            </form>
-        </div>
-    </div>
+<body> 
+    <div class="main"> 
+        <h1>Register Domino</h1> 
+        <form action=""> 
+            <label for="first">First Name:</label> 
+            <input type="text" id="first" name="first" placeholder="Enter your first name" required> 
 
-    <script src="scripts.js"></script>
-</body>
+            <label for="last">Last Name:</label> <input type="text" id="last" name="last"
+                placeholder="Enter your last name" required> 
+
+            <label for="email">Email:</label>  <input type="email" id="email" name="email"
+                placeholder="Enter your email" required> 
+
+
+            <label for="password">Password:</label> 
+            <input type="password" id="password"
+                name="password"
+                placeholder="Enter your password"
+                pattern= 
+                "^(?=.*\d)(?=.*[a-zA-Z])(?=.*[^a-zA-Z0-9])\S{8,}$" required              
+                title="Password must contain at least one number, 
+                    one alphabet, one symbol, and be at 
+                    least 8 characters long"> 
+
+            <label for="confirmpassword">Confirm Password:</label> 
+            <input type="password" id="confirmpassword" name="confirmpassword"
+                placeholder="Confirm your password" required> 
+                <span id="pass"></span> 
+
+            <label for="mobile">Contact:</label> <input type="text" id="mobile"
+                name="mobile"
+                placeholder="Enter your Mobile Number" required 
+                maxlength="10"> 
+
+            <label for="gender">Gender:</label> 
+            <select id="gender" name="gender" required> 
+                <option value="male">Male</option> 
+                <option value="female">Female</option> 
+                <option value="other">Other</option> 
+            </select> 
+
+            <div class="wrap"> 
+                <button type="submit" id="submitButton">Submit</button>
+                <br><br>
+
+            </div> 
+        </form> 
+        <p class="signup">Not a member?<a href="#" id="signupBtn">Sign Up</a></p>
+    </div> 
+    <script src="scripts.js"></script> 
+</body> 
+
 </html>
