@@ -174,7 +174,7 @@ Use Case Diagram for Domino
 3. Displays error message in case name is invalid
 4. Displays error message in case invalid size/format for the profile pic
 
-### G0001-006 Logout ###
+### D0001-006 Logout ###
 
 * Actor: User with Active Domino-ID
 
