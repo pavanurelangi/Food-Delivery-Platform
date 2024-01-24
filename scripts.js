@@ -2,7 +2,7 @@ function solve() {
 	let password = 
 		document.getElementById('password').value; 
 	let repassword = 
-		document.getElementById('repassword').value; 
+		document.getElementById('confirmpassword').value; 
 	let mobile = 
 		document.getElementById('mobile').value; 
 	let mail = 
@@ -19,7 +19,7 @@ function solve() {
 		}, 3000); 
 	} 
 
-	if (password !== repassword) { 
+	if (password !== confirmpassword) { 
 		flag = 0; 
 		pass.innerText = 
 			"Passwords do not match. Please re-enter."; 
